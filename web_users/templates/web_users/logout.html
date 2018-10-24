@@ -1,0 +1,11 @@
+{% extends "web_app/index.html" %}
+{% block content %}
+<h1>You have succesfull logout</h1>
+    <div class="border-top pt-3">
+      <div class="form-group">
+        <small class="text-muted">
+          <a href="{% url 'login' %}">Sign in</a>
+        </small>
+    </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends "web_app/index.html" %}
+{% block content %}
+<h1>welcome,</h1>
+<h3>To my website of indivudial budget spent</h3>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<meta charset="utf-8">
+
+<div class="co1 s12 m12 14">
+  <div class="card-panel">
+    <h1>{{ expense.name }}</h1>
+    <h6 class="bold">income</h6>
+    <h1 class="bold">{{ expense.income }}</h1>
+  </div>
+</div>
+
+
+<div class="co1 s12 m12 14">
+  <div class="card-panel">
+    <h6 class="bold">expense</h6>
+    <h1 class="bold">{{ expense.expense }}</h1>
+  </div>
+</div>
+
+<div class="co1 s12 m12 14">
+  <div class="card-panel">
+    <h6 class="bold">savings</h6>
+    <h1 class="bold">{{ expense.savings }}</h1>
+  </div>
+</div>
+
+</div>
+<hr>
+{% endblock content %}
